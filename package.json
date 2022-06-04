@@ -1,0 +1,19 @@
+{
+  "name": "tdd-kata-1",
+  "version": "0.0.1",
+  "description": "TDD Kata 1 found at https://osherove.com/tdd-kata-1/",
+  "main": "index.js",
+  "author": "Manu Dwivedi",
+  "license": "MIT",
+  "private": true,
+  "repository": "https://github.com/manu29d/tdd-kata-1",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/register": "^7.17.7",
+    "mocha": "^10.0.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
