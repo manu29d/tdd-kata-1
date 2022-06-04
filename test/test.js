@@ -37,4 +37,10 @@ describe('#Add', () => {
       assert.equal(Add("1,4"), 5);
     });
   });
+
+  describe('when N numbers are provided', () => {
+    it('should return the sum of the numbers', () => {
+      assert.equal(Add("1,2,3,4"), 10);
+    });
+  });
 });
