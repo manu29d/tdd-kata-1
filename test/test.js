@@ -13,4 +13,10 @@ describe('#Add', () => {
       assert.equal(Add("4"), 4);
     });
   });
+
+  describe('when 2 numbers are provided', () => {
+    it('should return the sum of the numbers', () => {
+      assert.equal(Add("1,4"), 5);
+    });
+  });
 });
