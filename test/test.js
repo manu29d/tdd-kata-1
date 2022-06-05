@@ -26,6 +26,12 @@ describe('#Add', () => {
     });
   });
 
+  describe('when the input is invalid', () => {
+    it('should return 0', () => {
+      assert.equal(Add('1,,'), 0);
+    });
+  });
+
   describe('when only 1 number is provided', () => {
     it('should return the number', () => {
       assert.equal(Add("4"), 4);
