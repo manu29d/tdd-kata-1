@@ -2,6 +2,9 @@ const Add = (str) => {
   if (!str || !str.length) return 0;
   if (str.length === 1) return parseInt(str);
 
+  const negativesSupplied = str.match(/-\d+/g);
+  if (negativesSupplied) throw RangeError(`negatives not allowed ${negativesSupplied}`);
+
   let customDelimiter = str.match(/^\/\/(.)\\n/);
   customDelimiter = customDelimiter && customDelimiter[1];
   const DELIMITERS = `${ customDelimiter || ',' }\n`;

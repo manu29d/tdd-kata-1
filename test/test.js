@@ -32,6 +32,12 @@ describe('#Add', () => {
         assert.equal(Add('1,,'), 0);
       });
     });
+
+    describe('when negative numbers are given', () => {
+      it('should throw an error', () => {
+        assert.throws(() => { Add('-1,-2,-3,4,5') }, RangeError, 'negatives not allowed -1,-2,-3');
+      });
+    });
   });
 
   describe('valid input', () => {
